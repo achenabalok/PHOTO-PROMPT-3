@@ -1,0 +1,115 @@
+{
+"subject": {
+"demographics": "Young adult female, tanned skin, dark hair",
+"hair": "Dark brown hair pulled back into a sleek, tight bun positioned at the back of the head",
+"body_type": "Voluptuous hourglass figure, prominent curves, significantly full and heavy bust with natural projection and weight, slim waist, wide hips, thick thighs",
+"skin_details": "Sun-kissed tan complexion, glossy and glistening skin texture indicative of oil or sweat, visible skin pores, natural skin tone variation",
+"markings": "Large dark floral tattoo on the upper left thigh/hip area",
+"clothing": "Crochet-style knit bikini with teal blue and yellow zigzag stripes, triangle halter top with visible texture, matching high-cut bikini bottoms sitting on hips",
+"accessories": "Silver nameplate necklace, small stud earrings",
+"facial_features": "Closed eyes, relaxed expression, full lips, high cheekbones, face angled upwards towards the sun"
+},
+"pose": {
+"type": "Seated reclining pose",
+"orientation": "Front-facing body, leaning backward supported by arms",
+"arms": "Both arms extended behind the torso, straight with locked elbows, hands resting flat on the white cushion surface supporting weight",
+"legs": "Legs extended forward, knees slightly bent and relaxed, thighs touching the surface",
+"head": "Tilted back, chin pointing upwards, exposing the neck to the sunlight",
+"spine": "Arched slightly backward due to the leaning posture",
+"shoulders": "Pushed back and down, accentuating the chest"
+},
+"environment": {
+"location": "Sunny beach setting",
+"ground": "White sand visible in the peripheral background",
+"props": "Large white outdoor lounge bed or daybed with thick white cushions, edge of a grey canopy or structure visible at the top right",
+"context": "Outdoor luxury beach club or resort"
+},
+"camera": {
+"shot_type": "Medium-full shot, capturing from knees to top of head",
+"angle": "High angle, looking slightly down at the subject",
+"focus": "Sharp focus on the subject, particularly the torso and face",
+"perspective": "Slight foreshortening of the legs due to high angle, emphasizing the upper body and hips",
+"depth_of_field": "Deep enough to keep the subject and immediate cushion texture in focus, sand slightly softer"
+},
+"lighting": {
+"type": "Natural daylight, harsh high-noon sunlight",
+"direction": "Overhead and slightly from the front-right",
+"shadows": "Strong, hard cast shadow of the subject falling behind her onto the white cushion to the right",
+"highlights": "Specular highlights on the chest, shoulders, and forehead due to oily/sweaty skin",
+"quality": "Bright, high-contrast"
+},
+"mood_and_expression": {
+"mood": "Relaxed, sensual, blissful, soaking up the sun",
+"expression": "Serene, eyes closed, mouth slightly open in a relaxed manner",
+"atmosphere": "Summer heat, leisure, vacation vibes"
+},
+"style_and_realism": {
+"style": "Photorealistic, candid lifestyle photography",
+"realism_level": "Raw, unfiltered reality, capturing skin texture and natural body weight distribution",
+"rendering": "High fidelity, detailed texture rendering for the crochet fabric and skin pores"
+},
+"colors_and_tone": {
+"dominant_colors": "White (cushion), Tan/Bronze (skin), Teal/Cyan and Yellow (bikini)",
+"contrast": "High contrast between the bright highlights and dark shadows",
+"saturation": "Natural but vibrant, emphasizing the blue of the bikini and the tan of the skin",
+"white_balance": "Daylight balanced, slightly warm due to the sun"
+},
+"quality_and_technical_details": {
+"resolution": "High resolution, sharp details",
+"noise": "Low noise, clear image",
+"texture_quality": "High detailed crochet knit texture, realistic skin texture with specularity"
+},
+"aspect_ratio_and_output": {
+"ratio": "3:4",
+"orientation": "Vertical portrait"
+},
+"controlnet": {
+"pose_control": {
+"model_type": "DWPose",
+"purpose": "Exact skeletal and pose lock",
+"constraints": [
+"preserve arm support angle",
+"preserve head tilt back",
+"preserve leg extension",
+"preserve shoulder width"
+],
+"recommended_weight": 1.0
+},
+"depth_control": {
+"model_type": "ZoeDepth",
+"purpose": "Depth, volume, and camera-to-body spatial lock",
+"constraints": [
+"preserve bust projection and volume",
+"maintain separation between torso and white background",
+"prevent flattening of curves"
+],
+"recommended_weight": 0.8
+}
+},
+"negative_prompt": {
+"forbidden_elements": [
+"anatomy normalization",
+"body proportion averaging",
+"reduced chest volume",
+"flattened breasts",
+"small bust",
+"lifted or artificially supported breasts",
+"slimmed torso",
+"aesthetic proportion correction",
+"beauty standard enforcement",
+"dataset-average female anatomy",
+"camera angles that reduce volume",
+"mirror selfies",
+"phone-in-hand",
+"reflections",
+"plastic skin",
+"airbrushed texture",
+"matte skin",
+"distorted hands",
+"missing tattoos",
+"flat lighting",
+"low contrast",
+"studio lighting"
+]
+}
+}
